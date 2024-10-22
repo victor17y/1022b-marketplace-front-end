@@ -20,7 +20,7 @@ function App() {
   const [usuarios, setUsuarios] = useState<UsuarioType[]>([])
 
   useEffect(() => {
-    fetch("https://one022b-marketplace-qybh.onrender.com/produto")
+    fetch("https://one022b-marketplace-qybh.onrender.com/produtos")
       .then(resposta => resposta.json())
       .then(dados => setProdutos(dados))
   }, [])
